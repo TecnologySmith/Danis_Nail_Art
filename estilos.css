@@ -1,0 +1,86 @@
+
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #fcb1e2, #a5c7f7);
+      color: #333;
+    }
+    footer{
+      background-color: #c4c3c3;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header img {
+      max-width: 200px;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      margin: 10px 0 0;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.8em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+    .contacto {
+      text-align: center;
+      margin: 50px 0;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .btn-tec-whatsapp {
+      background-color: #5d615f;
+      color: white;
+      padding: 10px 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  
+    .parallax {
+      background: linear-gradient(to right, #fcb1e2, #a5c7f7);
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 20px;
+    }
