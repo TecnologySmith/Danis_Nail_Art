@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,10 +6,7 @@
   <title>Danis Nail Art - Creaciones Mágicas</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="estilos.css">
-</head>
-
 </head>
 <body>
   <header>
@@ -20,14 +16,36 @@
   </header>
 
   <h2>Servicios que ofrecemos</h2>
-  <div class="parallax"><ul>
-    <li>💅 Esmaltado tradicional para manos y pies</li>
-    <li>💅 Esmaltado en semipermanente para manos y pies</li>
-    <li>✨ Esmaltado semipermanente con dipping</li>
-    <li>🌸 Uñas Soft gel con esmaltado semipermanente</li>
-    <li>💎 Uñas estructuradas o con tips en poly gel con esmaltado semipermanente</li>
-    <li>🌟 Recubrimiento uña natural con poly gel con esmaltado semipermanente</li>
-  </ul></div>
+  <div class="parallax">
+    <ul>
+      <li>💅 Esmaltado tradicional para manos y pies</li>
+      <li>💅 Esmaltado en semipermanente para manos y pies</li>
+      <li>✨ Esmaltado semipermanente con dipping</li>
+      <li>🌸 Uñas Soft gel con esmaltado semipermanente</li>
+      <li>💎 Uñas estructuradas o con tips en poly gel con esmaltado semipermanente</li>
+      <li>🌟 Recubrimiento uña natural con poly gel con esmaltado semipermanente</li>
+    </ul>
+  </div>
+
+  <h2 style="text-align:center; margin-top:50px;">✨ Galería de Diseños ✨</h2>
+  <div class="galeria">
+    <script>
+      for (let i = 1; i <= 11; i++) {
+        document.write(`<img src="imagen (${i}).jpeg" alt="Diseño ${i}" onclick="openModal(${i})">`);
+      }
+    </script>
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="Imagen Ampliada">
+    </div>
+    <span class="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
 
   <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
     <a class="btn-whatsapp" href="https://wa.me/573001112233?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20deseo%20un%20servicio" target="_blank">
@@ -35,23 +53,19 @@
     </a>
   </div>
 
-<!-- Separador -->
-<hr style="border: none; height: 2px; background: linear-gradient(to right, #c0b1fc, #c3f7a5); width: 80%; margin: 50px auto;">
+  <hr style="border: none; height: 2px; background: linear-gradient(to right, #c0b1fc, #c3f7a5); width: 80%; margin: 50px auto;">
 
-<!-- Footer -->
-
-<footer>
-  © 2025 Todos los derechos reservados | Creado con 💻 por TecnologySmith<br><br>
-  ¿Te gustaría tener una página web como esta totalmente gratis para tu negocio?<br><br>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
-    <a class="btn-tec-whatsapp" href="https://tecnologysmith.github.io/pagina_web_gratis_2/" target="_blank" style="background-color: #25D366;">
-      🌐 Página web gratis
-    </a>
-    <a class="btn-tec-whatsapp" href="https://tecnologysmith.godaddysites.com/" target="_blank" style="background-color: #007BFF;">
-      🛠️ Más servicios de TecnologySmith
-    </a>
-  </div>
-</footer>
-
+  <footer>
+    © 2025 Todos los derechos reservados | Creado con 💻 por TecnologySmith<br><br>
+    ¿Te gustaría tener una página web como esta totalmente gratis para tu negocio?<br><br>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <a class="btn-tec-whatsapp" href="https://tecnologysmith.github.io/pagina_web_gratis_2/" target="_blank" style="background-color: #25D366;">
+        🌐 Página web gratis
+      </a>
+      <a class="btn-tec-whatsapp" href="https://tecnologysmith.godaddysites.com/" target="_blank" style="background-color: #007BFF;">
+        🛠️ Más servicios de TecnologySmith
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
